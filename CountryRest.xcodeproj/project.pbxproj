@@ -21,6 +21,9 @@
 		7167C65E19501F7F00FD8F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7167C64019501F7F00FD8F55 /* UIKit.framework */; };
 		7167C66619501F7F00FD8F55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7167C66419501F7F00FD8F55 /* InfoPlist.strings */; };
 		7167C66819501F7F00FD8F55 /* CountryRestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7167C66719501F7F00FD8F55 /* CountryRestTests.m */; };
+		A200A764AD67552FC02F98EA /* libPods-CountryRest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23D2072CF480B7537282A9E /* libPods-CountryRest.a */; };
+		E3940F2419E4CC510008C813 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940F2319E4CC510008C813 /* NetworkController.m */; };
+		E3940F2719E4CCF10008C813 /* CountryController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3940F2619E4CCF10008C813 /* CountryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		251C4791D2918AAAE89100A1 /* Pods-CountryRest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryRest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountryRest/Pods-CountryRest.release.xcconfig"; sourceTree = "<group>"; };
 		7167C63919501F7F00FD8F55 /* CountryRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7167C63C19501F7F00FD8F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7167C63E19501F7F00FD8F55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,12 @@
 		7167C66319501F7F00FD8F55 /* CountryRestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CountryRestTests-Info.plist"; sourceTree = "<group>"; };
 		7167C66519501F7F00FD8F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7167C66719501F7F00FD8F55 /* CountryRestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryRestTests.m; sourceTree = "<group>"; };
+		E23D2072CF480B7537282A9E /* libPods-CountryRest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CountryRest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3940F2219E4CC510008C813 /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		E3940F2319E4CC510008C813 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
+		E3940F2519E4CCF10008C813 /* CountryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryController.h; sourceTree = "<group>"; };
+		E3940F2619E4CCF10008C813 /* CountryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryController.m; sourceTree = "<group>"; };
+		FE1197A60554223AEF281906 /* Pods-CountryRest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryRest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountryRest/Pods-CountryRest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 				7167C63F19501F7F00FD8F55 /* CoreGraphics.framework in Frameworks */,
 				7167C64119501F7F00FD8F55 /* UIKit.framework in Frameworks */,
 				7167C63D19501F7F00FD8F55 /* Foundation.framework in Frameworks */,
+				A200A764AD67552FC02F98EA /* libPods-CountryRest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36923268411F73FA73FE7F7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE1197A60554223AEF281906 /* Pods-CountryRest.debug.xcconfig */,
+				251C4791D2918AAAE89100A1 /* Pods-CountryRest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7167C63019501F7F00FD8F55 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +106,7 @@
 				7167C66119501F7F00FD8F55 /* CountryRestTests */,
 				7167C63B19501F7F00FD8F55 /* Frameworks */,
 				7167C63A19501F7F00FD8F55 /* Products */,
+				36923268411F73FA73FE7F7A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +126,7 @@
 				7167C63E19501F7F00FD8F55 /* CoreGraphics.framework */,
 				7167C64019501F7F00FD8F55 /* UIKit.framework */,
 				7167C65B19501F7F00FD8F55 /* XCTest.framework */,
+				E23D2072CF480B7537282A9E /* libPods-CountryRest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +140,10 @@
 				7167C65119501F7F00FD8F55 /* CRViewController.h */,
 				7167C65219501F7F00FD8F55 /* CRViewController.m */,
 				7167C65419501F7F00FD8F55 /* Images.xcassets */,
+				E3940F2519E4CCF10008C813 /* CountryController.h */,
+				E3940F2619E4CCF10008C813 /* CountryController.m */,
+				E3940F2219E4CC510008C813 /* NetworkController.h */,
+				E3940F2319E4CC510008C813 /* NetworkController.m */,
 				7167C64319501F7F00FD8F55 /* Supporting Files */,
 			);
 			path = CountryRest;
@@ -159,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7167C66B19501F7F00FD8F55 /* Build configuration list for PBXNativeTarget "CountryRest" */;
 			buildPhases = (
+				C2E0A03DB958DF4961BC0FBF /* Check Pods Manifest.lock */,
 				7167C63519501F7F00FD8F55 /* Sources */,
 				7167C63619501F7F00FD8F55 /* Frameworks */,
 				7167C63719501F7F00FD8F55 /* Resources */,
+				A245941AE8CC10C6B26453C4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,12 +273,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A245941AE8CC10C6B26453C4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountryRest/Pods-CountryRest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2E0A03DB958DF4961BC0FBF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7167C63519501F7F00FD8F55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3940F2419E4CC510008C813 /* NetworkController.m in Sources */,
 				7167C64919501F7F00FD8F55 /* main.m in Sources */,
+				E3940F2719E4CCF10008C813 /* CountryController.m in Sources */,
 				7167C64D19501F7F00FD8F55 /* CRAppDelegate.m in Sources */,
 				7167C65319501F7F00FD8F55 /* CRViewController.m in Sources */,
 			);
@@ -374,6 +437,7 @@
 		};
 		7167C66C19501F7F00FD8F55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE1197A60554223AEF281906 /* Pods-CountryRest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +451,7 @@
 		};
 		7167C66D19501F7F00FD8F55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251C4791D2918AAAE89100A1 /* Pods-CountryRest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +522,7 @@
 				7167C66D19501F7F00FD8F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7167C66E19501F7F00FD8F55 /* Build configuration list for PBXNativeTarget "CountryRestTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +531,7 @@
 				7167C67019501F7F00FD8F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
